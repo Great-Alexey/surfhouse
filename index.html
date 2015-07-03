@@ -4,7 +4,10 @@
         <title>surfhouse</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width">
+        <link type="text/css" href="js/jquery-ui/jquery-ui.min.css" rel="Stylesheet" />	
         <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="js/jquery/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
     </head>
     <body> 
         <header>
@@ -78,19 +81,62 @@
             <div class="blockCenter">
                 <div class="blockCenterRight">
                     <div class="menu">
-                        <nav>
-                            <a href="javascript:void(0)">MENU</a>
+                        <a href="javascript:void(0)" id="menu">MENU</a>
+                        <nav id="accordion"> 
                             <a href="javascript:void(0)">ABOUT</a>
-                            <a href="javascript:void(0)">APPAREL</a>
+                            <div>
+                              <a href="javascript:void(0)">ABOUT1</a>
+                              <a href="javascript:void(0)">ABOUT2</a>    
+                            </div>
+                            <a href="javascript:void(0)">APPAREL</a>    
+                            <div>
+                                <a href="javascript:void(0)">APPAREL1</a>
+                                <a href="javascript:void(0)">APPAREL2</a>
+                            </div>
                             <a href="javascript:void(0)">SURF APPAREL</a>
+                            <div>
+                                <a href="javascript:void(0)">SURF APPAREL1</a>
+                                <a href="javascript:void(0)">SURF APPAREL2</a>
+                            </div>
                             <a href="javascript:void(0)">WINDSURF</a>
+                            <div>
+                                <a href="javascript:void(0)">WINDSURF1</a>
+                                <a href="javascript:void(0)">WINDSURF2</a>
+                            </div>
                             <a href="javascript:void(0)">KITESURF</a>
+                            <div>
+                                <a href="javascript:void(0)">KITESURF1</a>
+                                <a href="javascript:void(0)">KITESURF2</a>
+                            </div>
                             <a href="javascript:void(0)">ACCESSORIES</a>
+                            <div>
+                                <a href="javascript:void(0)">ACCESSORIES1</a>
+                                <a href="javascript:void(0)">ACCESSORIES2</a>
+                            </div>
                             <a href="javascript:void(0)">SALE</a>
+                            <div>
+                                <a href="javascript:void(0)">SALE1</a>
+                                <a href="javascript:void(0)">SALE2</a>
+                            </div>
                             <a href="javascript:void(0)">BRANDS</a>
+                            <div>
+                                <a href="javascript:void(0)">BRANDS1</a>
+                                <a href="javascript:void(0)">BRANDS2</a>
+                            </div>
                             <a href="javascript:void(0)">BLOG</a>
+                            <div>
+                                <a href="javascript:void(0)">BLOG1</a>
+                                <a href="javascript:void(0)">BLOG2</a>
+                            </div>
                             <a href="javascript:void(0)">GADGETS</a>
+                                <p>
+                                   <i>Глазго</i> — крупнейший город Шотландии и третий по численности населения в Великобритании.
+                                </p>
                             <a href="javascript:void(0)">CONTACT</a>
+                                <p>
+                              
+                                    <i>Глазго</i> — крупнейший город Шотландии и третий по численности населения в Великобритании.
+                                </p>
                         </nav>
                     </div>
                     <div class="nowIsOpen">
@@ -249,7 +295,8 @@
                             </div>
                             <div class="clear"></div>
                         </div>
-                        <div class="productCenter">
+                        <div class="productCenter productCarusel">
+                            <div class="carusel">
                             <div class="content">
                                 <img src="" alt="">
                                 <div class="imgContent">
@@ -294,7 +341,59 @@
                                         <p></p>
                                     </div>
                                 </div>
-                            </div>       
+                            </div>
+                            
+                            
+                            
+                            <div class="content">
+                                <img src="" alt="">
+                                <div class="imgContent">
+                                    <img src="img/pic7.png" alt="">
+                                </div>
+                                <div class="pContent">
+                                    <div class="pContentLeft">
+                                        <p>USHINGHAM LIGHTING 2014</p>
+                                    </div>
+                                    <div class="pContentRight">
+                                        <p>&#8364;.2,960.95</p>
+                                        <p>&#8364;.3,100.15</p>
+                                    </div>                                                                   
+                                </div>
+                            </div>
+                            <div class="content">
+                                <img src="" alt="">
+                                <div class="imgContent">
+                                    <img src="img/pic7.png" alt="">
+                                </div>
+                                <div class="pContent">
+                                    <div class="pContentLeft">
+                                        <p>CYPHER HEAT VES M</p>
+                                    </div>
+                                    <div class="pContentRight">
+                                        <p>&#8364;.849.95</p>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content">
+                                <img src="" alt="">
+                                <div class="imgContent">
+                                    <img src="img/pic7.png" alt="">
+                                </div>
+                                <div class="pContent">
+                                    <div class="pContentLeft">
+                                        <p>SYNCRO WOMENS QS M</p>
+                                    </div>
+                                    <div class="pContentRight">
+                                        <p>&#8364;.1,110.99</p>
+                                        <p></p>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            
+                            
+                            
                         </div>
                         <div class="clear"></div>
                     </div>
@@ -535,7 +634,7 @@
                 <div class="clear"></div>
             </div>
         </footer>
-        <script src="js/jquery-1.11.3.min.js"></script>
+        <!--<script src="js/jquery-1.11.3.min.js"></script>-->
         <script src="js/main.js"></script>
     </body>
 </html>

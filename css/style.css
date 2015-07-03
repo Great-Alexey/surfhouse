@@ -150,22 +150,40 @@ main {
 nav {
     background: #26d2fc;   
 }
-nav a {
+nav > a {
     color: #000;
     font-size: 14px;
     font-family: Arial ;
     display: block;
     padding: 11px 40px;
+    border: 0;
 }
-nav a:hover {
+nav div {
+    padding: 0;
+}
+nav div a {
+    color: #000;
+    font-size: 12px;
+    font-family: Arial ;
+    display: block;
+    padding: 11px 40px;
+}
+nav > a:hover,
+nav > a a:hover {
     background: #333333;
     color: #fff;
+    border: 0;
 }
-nav a:first-child {
+
+#menu {
+    display: block;
     padding: 22px 40px;
     background: #333333;
     color: #fff;
 }
+
+
+
 .nowIsOpen {
     height: 300px;
     position: relative;
@@ -260,6 +278,19 @@ nav a:first-child {
 }
 .productTop .strelki img:first-child {
     margin-right: 15px;
+}
+.productCarusel {
+    height: 300px;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.carusel {
+    width: 2120px;
+    transition: all 0.4s ease 0s;
+}
+.carusel > .content:nth-child(3n) {
+    margin-right: 30px;
 }
 .content {
     padding: 10px;
@@ -449,6 +480,7 @@ nav a:first-child {
 }
 .imgCard img {
     margin-right: 6px;
+    cursor: default;
 }
 .imgCard img:last-child {
     margin-right: 0;
@@ -492,4 +524,41 @@ nav a:first-child {
 }
 .footerBottomRight a:last-child {
     margin-right: 0;
+}
+
+
+#accordion.ui-accordion .ui-accordion-header {
+        border: 0;
+}
+#accordion.ui-accordion .ui-accordion-icons {
+	background: #26d2fc;
+        color: #000;
+        border: 0;
+        margin: 0;
+        border-radius: 0;
+        outline: none;
+}
+#accordion.ui-accordion .ui-accordion-icons:hover {
+    background: #333333;
+    color: #fff;
+    border: 0;
+}
+#accordion.ui-accordion .ui-accordion-icons .ui-accordion-icons {
+	border: 0;
+        
+}
+#accordion.ui-accordion .ui-accordion-header .ui-accordion-header-icon {
+        display: none;
+        border: 0;
+        
+}
+#accordion.ui-accordion .ui-accordion-content {
+        padding: 0;
+	overflow: auto;
+        background: #81e6fe;
+}
+#accordion a:hover {
+    background: #333333;
+    color: #fff;
+    border: 0;
 }
