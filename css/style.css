@@ -41,10 +41,13 @@ main {
 .blockBasket {
     width: 270px;
 }
+.blockBasketTop {
+    margin-bottom: 8px;
+}
 .buttonsBasket a {
     display: block;
     float: left;
-    width: 135px; 
+    width: 50%;
     padding: 6px 0;
     background: #f8f8f8;
     text-align: center;
@@ -94,33 +97,37 @@ main {
     color: #403530;
     font-size: 11px;
 }
-form {
+.formSearch {
     position: relative;
 }
-form input {
-    width: 235px;
-    padding: 8px;
+.formSearch input {
+    width: 100%;
+    padding: 8px 40px 8px 8px;
+    border: 0;
+    box-sizing: border-box;
 }
-form > img {
+.formSearch > img {
     position: absolute;
-    right: 47px;
-    top: 13px;
+    right: 42px;
+    top: 11px;
 }
-form a {
+.formSearch button {
     display: block;
     position: relative;
-    width: 35px;
-    height: 35px;
+    width: 31px;
+    height: 31px;
     background: #333333;
     float: right;
+    top: -31px;
+    border: 0;
 }
-form a img {
+.formSearch button img {
     position: absolute;
-    top: 11px;
-    left: 12px;
+    top: 9px;
+    left: 10px;
 }
 .blockBasketBottom {
-    margin: 8px 0 40px 0;
+    margin-bottom:40px;
     background: #fff51f;
     padding: 80px 20px;
 }
@@ -175,28 +182,28 @@ nav a:first-child {
     font-style: oblique;
 }
 .tagsWidget {
-    padding: 28px;
+    padding: 26px;
     background: #fff;
 }
-.tagsWidget div a {
+.tagsWidget > a {
     display: block;
     color: #333333;
     font-size: 12px;
     background: #e9e9e9;
     padding: 11px 13px;
     float: left;
-    margin: 0 8px 0 0;
+    margin: 0 8px 8px 0;
 }
-.tagsWidget div {
-    height: 37px;
-    margin-bottom: 8px;
+.tagsWidget > a:hover {
+    background: #faef03;
 }
 #tagsWidgetLast {
     height: 0px;
     margin-bottom: 20px;
 }
-.tagsWidget div a:last-child {
+.tagsWidget a:last-child {
     margin: 0;
+    clear: both;
 }
 .tagsWidget .chief {
     padding: 10px 30px;
@@ -208,22 +215,26 @@ nav a:first-child {
     margin-bottom: 22px;
     font-style: oblique;
 }
-.tagsWidget > a,
-.articlesExperts > a {
+.tagsWidget div a ,
+.articlesExperts div a {
     color: #000;
     font-weight: bold;
+    margin-bottom: 0;
 }
 .articlesExperts {
-    padding: 28px;
+    padding: 26px;
     background: #fff;
 }
-.articlesExperts p {
+.articlesExperts a {
+    display: block;
     color: #828282;
-    margin-bottom: 15px;
+    margin-bottom: 14px;
     font-size: 14px;
 }
-
-
+.articlesExperts div {
+    margin-top: 25px;
+    
+}
 .blockCenterLeft {
     width: 870px;
     float: right;
@@ -245,6 +256,7 @@ nav a:first-child {
 }
 .productTop .strelki {
     float: right;
+    margin-top: 5px;
 }
 .productTop .strelki img:first-child {
     margin-right: 15px;
@@ -261,7 +273,7 @@ nav a:first-child {
 .content:nth-child(3n) {
     margin-right: 0;
 }
-.content img {
+.content > img {
     position: absolute;
     top: 0;
     right: 0;
@@ -271,6 +283,10 @@ nav a:first-child {
     height: 230px;
     background: #eaeaea;
     margin-bottom: 24px;
+}
+.imgContent img {
+    width: 250px;
+    height: 230px;
 }
 .pContentLeft {
     float: left;
@@ -301,9 +317,14 @@ nav a:first-child {
     float: left;
     /*background: #dedede;*/
 }
+.brands img {
+    width: 130px;
+    height: 100px;
+}
 .brands div:last-child {
     margin-right: 0;
 }
+
 .instagramFeed {
     padding: 50px 300px 24px 300px;
     background: #eaeaea;
@@ -325,16 +346,18 @@ nav a:first-child {
     margin-top: 4px;
     font-size: 18px;
 }
-.instagramImg div {
+.instagramImg {
+    margin-bottom: 60px;
+}
+.instagramImgIn {
     width: 172px;
     height: 172px;
     padding: 6px;
     background: #fff;
     float: left;
     margin-right: 13px;
-    margin-bottom: 60px;
 }
-.instagramImg div:last-child {
+.instagramImg div:nth-child(6) {
     margin-right: 0;
 }
 .instagramSeti a {
@@ -410,14 +433,16 @@ nav a:first-child {
     font-size: 12px;
     background: #fff51f;
     float: left;
+    border: 0;
 }
-.email a {
+.email button {
     display: block;
-    padding: 10px 10px;
+    padding: 8px 10px;
     background: #000;
     float: left;
     font-size: 12px;
     color: #fff;
+    border: 0;
 }
 .imgCard {
     margin-top: 44px;
