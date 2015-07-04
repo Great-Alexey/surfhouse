@@ -772,55 +772,27 @@ nav > a a:hover {
 
 /** Stage carousel controls **/
 
-.slider .prev-stageSlider,
-.slider .next-stageSlider {
+.slider .slider-control-container {
     display: block;
     position: absolute;
-    top: 0;
-    width: 305px;
-    height: 410px;
+    top: 220px;
+    right: 100px;
     color: #fff;
 }
 
-.slider .prev-stageSlider {
-    left: 0;
-}
-
-.slider .next-stageSlider {
-    right: 0;
-}
-
-.slider .prev-stageSlider.inactive,
-.slider .next-stageSlider.inactive {
-    display: none;
-}
-
-.slider .prev-stageSlider span,
-.slider .next-stageSlider span {
-    display: none;
-    position: absolute;
-    top: 50%;
+.slider .slider-control-container .prev-stageSlider,
+.slider .slider-control-container .next-stageSlider {
+    position: relative;
+    float: left;
     width: 30px;
     height: 50px;
-    text-align: center;
-    background: #fff;
-    color: #fff;
-    text-decoration: none;
-    
+    background: #fff51f;
 }
 
-.slider .prev-stageSlider span {
-    left: 20px;
+.slider-control-container .prev-stageSlider img,
+.slider-control-container .next-stageSlider img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -8px 0 0 -6px;
 }
-
-.slider .next-stageSlider span {
-    right: 20px;
-}
-
-.slider .prev-stageSlider:hover span,
-.slider .next-stageSlider:hover span {
-    display: block;
-}
-
-
-
