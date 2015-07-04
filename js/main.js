@@ -155,9 +155,21 @@ $('#accordion').accordion({
             // This is where we actually connect to items.
             var target = connector(item, carouselStage);
 
+            $('.slider .carousel-stageSlider')
+                .jcarousel({
+            interval: 10,
+            wrap: 'both'
+
+                })
+                .jcarouselAutoscroll({
+                    interval: 5000,
+                    target: '+=1',
+                    autostart: true
+                });
+
             item
                 .on('jcarouselcontrol:active', function() {
-                    carouselNavigation.jcarousel('scrollIntoView', this);
+//                    carouselNavigation.jcarousel('scrollIntoView', this);
                     item.addClass('active');
                 })
                 .on('jcarouselcontrol:inactive', function() {
