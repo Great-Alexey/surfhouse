@@ -15,6 +15,13 @@ body {
     background: #f8f8f8;
     /*background: #dfdfdf;*/
 }
+.underHeader {
+    width: 100%;
+    height: 720px;
+    position: absolute;
+    z-index: -1;
+    background: #abeafa;
+}
 header {
     width: 1090px;
     margin: 0 auto;
@@ -40,6 +47,7 @@ main {
 }
 .blockBasket {
     width: 270px;
+    float: left;
 }
 .blockBasketTop {
     margin-bottom: 8px;
@@ -140,6 +148,14 @@ main {
     font-style: oblique;
     font-weight: bold;
     font-size: 18px;
+}
+.topSlider {
+    width: 830px;
+    float: right;
+    padding: 20px;
+}
+.slider {
+    
 }
 .blockCenterRight {
     width: 270px;
@@ -582,8 +598,8 @@ nav > a a:hover {
 
 
 
-/*.connected-carousels .navigation {
-    расположение самой карусели
+.connected-carousels .navigation {
+    /*расположение самой карусели*/
 }
 
 
@@ -636,7 +652,13 @@ nav > a a:hover {
 }
 #newCarusel ul li .content {
     float: none;
-}*/
+}
+
+
+
+
+
+
 
 
 
@@ -653,10 +675,9 @@ nav > a a:hover {
 
 
 /** Stage container **/
-/*контейнер*/
-.connected-carousels .stage {
-    width: 1500px;
-    margin: 20px auto;
+
+.slider .stageSlider {
+    width: 760px;
     position: relative;
 }
 
@@ -664,58 +685,95 @@ nav > a a:hover {
 
 
 
-
+/** Navigation container **/
+.slider {
+    /*width: 600px;*/
+    position: relative;
+}
+.slider .navigationSlider {
+    /*width: 260px;*/
+    margin-top: 20px;
+    margin-left: 200px;
+    position: relative;
+    
+}
+.sliderContent {
+    position: relative;
+}
+.sliderContentIn {
+    width: 340px;
+    height: 280px;
+    position: relative;
+    top: 30px;
+    right: -400px;
+}
+.sliderContent h1 {
+    font-size: 46px;
+    color: #fff51f;
+}
+.sliderContent p {
+    width: 330px;
+    color: #fff51f;
+    margin-bottom: 60px;
+    
+}
+.sliderContent button {
+    background: #fff51f;
+    border: 0;
+    padding: 20px 26px;
+}
 /** Shared carousel styles **/
 
-.connected-carousels .carousel {
+.slider .carousel {
     overflow: hidden;
     position: relative;
 }
 
-.connected-carousels .carousel ul {
-    width: 20000px;
+.slider .carousel ul {
+    width: 6000px;
     position: relative;
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.connected-carousels .carousel li {
+.slider .carousel li {
+    width: 760px;
     float: left;
-    width: 1500px;
-    height: 700px;
-}
-.connected-carousels .carousel li:first-child {
-    background: #abeafa;
-}
-.connected-carousels .carousel li:nth-child(2) {
-    background: yellow;
-}
-.connected-carousels .carousel li:last-child {
-    background: red;
 }
 
-/*.connected-carousels .carousel-stage {
+/** Stage carousel specific styles **/
+
+.slider .carousel-stageSlider {
     height: 400px;
-    border: 10px solid #fff;
-    -webkit-border-radius: 5px;
-       -moz-border-radius: 5px;
-            border-radius: 5px;
-    -webkit-box-shadow: 0 0 2px #999;
-       -moz-box-shadow: 0 0 2px #999;
-            box-shadow: 0 0 2px #999;
-}*/
+}
+
+/** Navigation carousel specific styles **/
+
+.slider .carousel-navigationSlider {
+    /*width: 240px;*/
+}
 
 
-
-
-
-
+.slider .carousel-navigationSlider li {
+    display: block;
+    width: 40px;
+    height: 4px;
+    cursor: pointer;
+    background: #faef03;
+    margin-right: 8px;
+}
+.slider .carousel-navigationSlider li:last-child {
+    margin-right: 0;
+}
+.slider .carousel-navigationSlider li.active {
+    background: #fb4d01;
+}
 
 /** Stage carousel controls **/
 
-.connected-carousels .prev-stage,
-.connected-carousels .next-stage {
+.slider .prev-stageSlider,
+.slider .next-stageSlider {
     display: block;
     position: absolute;
     top: 0;
@@ -724,18 +782,21 @@ nav > a a:hover {
     color: #fff;
 }
 
-.connected-carousels .prev-stage {
+.slider .prev-stageSlider {
     left: 0;
 }
 
-.connected-carousels .next-stage {
+.slider .next-stageSlider {
     right: 0;
 }
 
+.slider .prev-stageSlider.inactive,
+.slider .next-stageSlider.inactive {
+    display: none;
+}
 
-
-.connected-carousels .prev-stage span,
-.connected-carousels .next-stage span {
+.slider .prev-stageSlider span,
+.slider .next-stageSlider span {
     display: none;
     position: absolute;
     top: 50%;
@@ -745,28 +806,21 @@ nav > a a:hover {
     background: #fff;
     color: #fff;
     text-decoration: none;
+    
 }
-.connected-carousels .prev-stage span img,
-.connected-carousels .next-stage span img {
-    margin-top: 18px;
-}
-.connected-carousels .prev-stage span {
+
+.slider .prev-stageSlider span {
     left: 20px;
 }
 
-.connected-carousels .next-stage span {
+.slider .next-stageSlider span {
     right: 20px;
 }
 
-.connected-carousels .prev-stage:hover span,
-.connected-carousels .next-stage:hover span {
+.slider .prev-stageSlider:hover span,
+.slider .next-stageSlider:hover span {
     display: block;
 }
 
 
 
-.connected-carousels .prev-navigation.inactive,
-.connected-carousels .next-navigation.inactive {
-    opacity: .5;
-    cursor: default;
-}
