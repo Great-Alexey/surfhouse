@@ -1,5 +1,36 @@
 
 
+$('.treug').click(function(){
+    
+    var a  = $('#nowLan');
+    var en = $('#en');
+    var ru = $('#ru');
+    var ua = $('#ua');
+    var block = $('.changeLangIn p');
+    
+   block.show();
+   $(en).click(function(){
+      $(a).text('EN');
+      block.hide();
+   });
+   block.show();
+   $(ru).click(function(){
+      $(a).text('RU');
+      block.hide();
+   });
+   block.show();
+   $(ua).click(function(){
+      $(a).text('UA');
+      block.hide();
+   });
+});
+
+
+$(function() {
+    $( "#speed" ).selectmenu();
+ 
+
+  });
 $('#accordion').accordion({
         collapsible: true,
         active: false,
@@ -183,23 +214,23 @@ $('#accordion').accordion({
 
         // Setup controls for the stage carousel
         $('.prev-stageSlider')
-            .on('jcarouselcontrol:inactive', function() {
-                $(this).addClass('inactive');
-            })
-            .on('jcarouselcontrol:active', function() {
-                $(this).removeClass('inactive');
-            })
+//            .on('jcarouselcontrol:inactive', function() {
+//                $(this).addClass('inactive');
+//            })
+//            .on('jcarouselcontrol:active', function() {
+//                $(this).removeClass('inactive');
+//            })
             .jcarouselControl({
                 target: '-=1'
             });
 
         $('.next-stageSlider')
-            .on('jcarouselcontrol:inactive', function() {
-                $(this).addClass('inactive');
-            })
-            .on('jcarouselcontrol:active', function() {
-                $(this).removeClass('inactive');
-            })
+//            .on('jcarouselcontrol:inactive', function() {
+//                $(this).addClass('inactive');
+//            })
+//            .on('jcarouselcontrol:active', function() {
+//                $(this).removeClass('inactive');
+//            })
             .jcarouselControl({
                 target: '+=1'
             });
