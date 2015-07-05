@@ -1,6 +1,9 @@
 
+$('#nowLan').click(function(){
+    
+});
 
-$('.treug').click(function(){
+$('#nowLan').click(function(){
     
     var a  = $('#nowLan');
     var en = $('#en');
@@ -8,6 +11,9 @@ $('.treug').click(function(){
     var ua = $('#ua');
     var block = $('.changeLangIn p');
     
+//    a.click(function(){
+//        block.hide();
+//    });
    block.show();
    $(en).click(function(){
       $(a).text('EN');
@@ -23,8 +29,8 @@ $('.treug').click(function(){
       $(a).text('UA');
       block.hide();
    });
+   
 });
-
 
 $(function() {
     $( "#speed" ).selectmenu();

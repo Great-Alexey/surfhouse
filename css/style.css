@@ -20,7 +20,12 @@ body {
     height: 720px;
     position: absolute;
     z-index: -1;
-    background: #abeafa;
+    /*background: #abeafa;*/
+/*    background: url('../img/headFon.png');*/
+}
+.underHeader img {
+    width: 1500px;
+    height: 720px;
 }
 header {
     width: 1090px;
@@ -35,9 +40,7 @@ header {
     border: 0;
     width: 44px;
     height: 15px;
-    /*overflow: hidden;*/
     font-size: 12px;
-    background: #abeafa;
     color: #fff;
 }
 .changeLang a,
@@ -46,19 +49,15 @@ header {
     color: #fff;
     font-size: 12px;
     height: 14px;
+    cursor: pointer;
 }
 .changeLang p {
     display: none;
-    cursor: pointer;
+    
 }
 .changeLang p:hover {
     color: #e24602;
 }
-/*.changeLang img {
-    position: relative;
-    left: -18px;
-    top: -1px;
-}*/
 .seti {
     float: right;
     margin-top: 40px;
@@ -274,6 +273,9 @@ main {
     height: 50px;
     background: #fff51f;
 }
+.slider-control-container a:first-child {
+    margin-right: 2px;
+}
 .slider-control-container .prev-stageSlider img,
 .slider-control-container .next-stageSlider img {
     position: absolute;
@@ -307,6 +309,7 @@ main {
     border: 0;
 }
 #accordion.ui-accordion .ui-accordion-icons .ui-accordion-icons {
+
 	border: 0;    
 }
 #accordion.ui-accordion .ui-accordion-header .ui-accordion-header-icon {
@@ -324,6 +327,11 @@ main {
     color: #fff;
     border: 0;
 }
+
+
+
+
+
 
 nav {
     background: #26d2fc;   
@@ -759,3 +767,6 @@ nav > a a:hover {
     border-top: 8px solid #fff;
     
    }
+   
+   
+   
