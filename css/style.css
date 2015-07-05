@@ -13,15 +13,14 @@ img {
 }
 body {
     background: #f8f8f8;
-    /*background: #dfdfdf;*/
+    font:normal 12px tahoma,arial,verdana,sans-serif;
+    /*font-family: tahoma, verdana, arial, sans-serif;*/
 }
 .underHeader {
     width: 100%;
     height: 720px;
     position: absolute;
     z-index: -1;
-    /*background: #abeafa;*/
-/*    background: url('../img/headFon.png');*/
 }
 .underHeader img {
     width: 1500px;
@@ -393,6 +392,10 @@ nav > a a:hover {
     color: #333333;
     font-style: oblique;
 }
+.nowIsOpen img {
+    width: 270px;
+    height: 300px;
+}
 .tagsWidget {
     padding: 26px;
     background: #fff;
@@ -400,7 +403,7 @@ nav > a a:hover {
 .tagsWidget > a {
     display: block;
     color: #333333;
-    font-size: 12px;
+    font-size: 13px;
     background: #e9e9e9;
     padding: 11px 13px;
     float: left;
