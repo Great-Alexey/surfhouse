@@ -307,6 +307,7 @@ main {
 #accordion.ui-accordion .ui-accordion-header {
         border: 0;
 }
+
 #accordion.ui-accordion .ui-accordion-icons {
 	background: #26d2fc;
         color: #000;
@@ -315,7 +316,8 @@ main {
         border-radius: 0;
         outline: none;
 }
-#accordion.ui-accordion .ui-accordion-icons:hover {
+#accordion.ui-accordion .ui-accordion-icons:hover,
+#accordion.ui-accordion .ui-accordion-icons.ui-accordion-header-active{
     background: #333333;
     color: #fff;
     border: 0;
@@ -333,6 +335,7 @@ main {
 	overflow: auto;
         background: #81e6fe;
         border-radius: 0;
+        border: none;
 }
 #accordion a:hover {
     background: #333333;
