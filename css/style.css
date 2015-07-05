@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -13,8 +14,7 @@ img {
 }
 body {
     background: #f8f8f8;
-    font:normal 12px tahoma,arial,verdana,sans-serif;
-    /*font-family: tahoma, verdana, arial, sans-serif;*/
+    font:normal tahoma,arial,verdana,sans-serif;
 }
 .underHeader {
     width: 100%;
@@ -98,6 +98,9 @@ main {
     text-align: center;
     color: #fb4d01;
     font-size: 14px;
+}
+.buttonsBasketTop a {
+    font-family: Raleway Light;
 }
 .buttonsBasketTop a:hover {
     background: #dedede;
@@ -314,7 +317,8 @@ main {
         border-radius: 0;
         outline: none;
 }
-#accordion.ui-accordion .ui-accordion-icons:hover {
+#accordion.ui-accordion .ui-accordion-icons:hover,
+#accordion.ui-accordion .ui-accordion-icons.ui-accordion-header-active {
     background: #333333;
     color: #fff;
     border: 0;
@@ -350,7 +354,7 @@ nav {
 nav > a {
     color: #000;
     font-size: 14px;
-    font-family: Arial ;
+    font-family: arial sans-serif ;
     display: block;
     padding: 11px 40px;
     border: 0;
@@ -361,7 +365,7 @@ nav div {
 nav div a {
     color: #000;
     font-size: 12px;
-    font-family: Arial ;
+    font-family: Arial sans-serif;
     display: block;
     padding: 11px 40px;
 }
@@ -782,6 +786,8 @@ nav > a a:hover {
     border-top: 8px solid #fff;
     
    }
-   
+   h4 {
+       font-family: Roboto Black Italic;
+   }
    
    
