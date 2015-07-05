@@ -1,36 +1,42 @@
-
-$('#nowLan').click(function(){
-    
-});
-
-$('#nowLan').click(function(){
-    
-    var a  = $('#nowLan');
-    var en = $('#en');
-    var ru = $('#ru');
-    var ua = $('#ua');
+i=0;
+var a     = $('#nowLan');
+    var en    = $('#en');
+    var ru    = $('#ru');
+    var ua    = $('#ua');
     var block = $('.changeLangIn p');
-    
-//    a.click(function(){
-//        block.hide();
-//    });
-   block.show();
-   $(en).click(function(){
+
+$(en).click(function(){
       $(a).text('EN');
       block.hide();
    });
-   block.show();
    $(ru).click(function(){
       $(a).text('RU');
       block.hide();
    });
-   block.show();
    $(ua).click(function(){
       $(a).text('UA');
       block.hide();
-   });
-   
+   }); 
+   $('.changeLang').click(function(){
+       if(i===0){
+           block.show();
+           $('#treugOff').css({display: 'none'});
+           $('#treugOn').css({display: 'block'});
+           i=1;
+       }
+       else{
+           block.hide();
+           $('#treugOn').css({display: 'none'});
+           $('#treugOff').css({display: 'block'});
+           i=0;
+       }
+    
 });
+
+
+
+
+
 
 $(function() {
     $( "#speed" ).selectmenu();

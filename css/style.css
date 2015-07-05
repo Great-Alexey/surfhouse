@@ -35,13 +35,15 @@ header {
 .changeLang {
     float: right;
     margin-top: 40px;
+    position: relative;
 }
 .changeLang .changeLangIn {
     border: 0;
-    width: 44px;
+    width: 40px;
     height: 15px;
     font-size: 12px;
     color: #fff;
+    
 }
 .changeLang a,
 .changeLang p {
@@ -57,6 +59,16 @@ header {
 }
 .changeLang p:hover {
     color: #e24602;
+}
+#treugOn,
+#treugOff {
+    position: absolute;
+    top: 3px;
+    right: 12px;
+    display: none;
+}
+#treugOff {
+    display: block;
 }
 .seti {
     float: right;
