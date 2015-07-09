@@ -1,86 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>surfhouse</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width">
-        <link type="text/css" href="js/jquery-ui/jquery-ui.min.css" rel="Stylesheet" />	
-        <link rel="stylesheet" href="css/style.css">
-        <script type="text/javascript" src="js/jquery/jquery-1.11.3.min.js"></script>
-        <script type="text/javascript" src="js/jquery-ui/jquery-ui.min.js"></script>
-        <script type="text/javascript" src="js/carusel/jCarouselCore.js"></script>
+        <?php include 'helpers/head.php'; ?>
     </head>
     <body>
         <div class="underHeader">
             <img src="img/headFon2.png" alt="">
         </div>
         <header>
-            <a href="javascript:void(0)">
-                <img src="img/logo.png" alt="">
-            </a>
-            <div class="changeLang">
-                <div class="changeLangIn">
-                    <a id="nowLan">EN</a>
-                    <p id="en">EN</p>
-                    <p id="ru">RU</p>
-                    <p id="ua">UA</p>
-                </div>
-                <img src="img/treug1.png" id="treugOff" alt="">
-                <img src="img/treug.png" id="treugOn" alt="">
-            </div>
-            <div class="seti">
-                <a href="javascript:void(0)">
-                    <img src="img/fs.png" alt="">
-                </a>
-                <a href="javascript:void(0)">
-                    <img src="img/tw.png" alt="">
-                </a>
-                <a href="javascript:void(0)">
-                    <img src="img/youTube.png" alt="">
-                </a>
-                <a href="javascript:void(0)">
-                    <img src="img/p.png" alt="">
-                </a>
-                <a href="javascript:void(0)">
-                    <img src="img/ins.png" alt="">
-                </a>
-            </div>
+            <?php include 'helpers/header.php'; ?>
         </header>
         <main>
             <div class="blockBasket">
-                <div class="blockBasketTop">
-                    <div class="buttonsBasket buttonsBasketTop">
-                        <a href="javascript:void(0)">LOG IN</a>
-                        <a href="javascript:void(0)">WISH LIST(0)</a>
-                    </div>
-                    <div class="clear"></div>
-                    <div class="basketCenter">
-                        <div>
-                            <img src="img/basket.png" alt="">
-                            <div class="price">
-                                <p>$1,459.50</p>
-                                <a href="javascript:void(0)"> 2 items</a>
-                            </div>
-                        </div>
-                        <div class="edit">
-                            <a href="javascript:void(0)"></a>
-                            <a href="javascript:void(0)">EDIT</a>
-                        </div>
-                        <div class="clear"></div>
-                    </div>
-                    <div class="buttonsBasket buttonsBasketBottom">
-                        <a href="javascript:void(0)">VIEW CARD</a>
-                        <a href="javascript:void(0)">CHECKOUT</a>
-                        <div class="clear"></div>
-                    </div> 
-                    <form class="formSearch">
-                        <input type="search" placeholder="SEARCH">
-                        <!--<img src="img/search.+.png" alt="">-->
-                        <button>
-                            <img src="img/search.png" alt="">
-                        </button>
-                    </form>
-                </div>
+                <?php include 'helpers/blockBasket.php'; ?>
                 <div class="blockBasketBottom">
                     <h2>WELCOME TO SURFHOUSE</h2>
                     <p>The only online store you will ever need for all you windsurfing and kitesurfing and SUP needs</p>
@@ -160,101 +92,13 @@
             <div class="blockCenter">
                 <div class="blockCenterRight">
                     <div class="menu">
-                        <a href="javascript:void(0)" id="menu">MENU</a>
-                        <nav id="accordion"> 
-                            <a href="javascript:void(0)">ABOUT</a>
-                            <div>
-                              <a href="javascript:void(0)">ABOUT1</a>
-                              <a href="javascript:void(0)">ABOUT2</a>    
-                            </div>
-                            <a href="javascript:void(0)">APPAREL</a>    
-                            <div>
-                                <a href="javascript:void(0)">APPAREL1</a>
-                                <a href="javascript:void(0)">APPAREL2</a>
-                                <a href="javascript:void(0)">APPAREL2</a>
-                                <a href="javascript:void(0)">APPAREL2</a>
-                            </div>
-                            <a href="javascript:void(0)">SURF APPAREL</a>
-                            <div>
-                                <a href="javascript:void(0)">SURF APPAREL1</a>
-                                <a href="javascript:void(0)">SURF APPAREL2</a>
-                            </div>
-                            <a href="javascript:void(0)">WINDSURF</a>
-                            <div>
-                                <a href="javascript:void(0)">WINDSURF1</a>
-                            </div>
-                            <a href="javascript:void(0)">KITESURF</a>
-                            <div>
-                                <a href="javascript:void(0)">KITESURF1</a>
-                                <a href="javascript:void(0)">KITESURF2</a>
-                            </div>
-                            <a href="javascript:void(0)">ACCESSORIES</a>
-                            <div>
-                                <a href="javascript:void(0)">ACCESSORIES1</a>
-                                <a href="javascript:void(0)">ACCESSORIES2</a>
-                                <a href="javascript:void(0)">ACCESSORIES1</a>
-                                <a href="javascript:void(0)">ACCESSORIES2</a>
-                                <a href="javascript:void(0)">ACCESSORIES1</a>
-                                <a href="javascript:void(0)">ACCESSORIES2</a>
-                            </div>
-                            <a href="javascript:void(0)">SALE</a>
-                            <div>
-                                <a href="javascript:void(0)">SALE1</a>
-                                <a href="javascript:void(0)">SALE2</a>
-                            </div>
-                            <a href="javascript:void(0)">BRANDS</a>
-                            <div>
-                                <a href="javascript:void(0)">BRANDS1</a>
-                                <a href="javascript:void(0)">BRANDS2</a>
-                                <a href="javascript:void(0)">BRANDS2</a>
-                            </div>
-                            <a href="javascript:void(0)">BLOG</a>
-                            <div>
-                                <a href="javascript:void(0)">BLOG1</a>
-                                <a href="javascript:void(0)">BLOG2</a>
-                            </div>
-                            <a href="javascript:void(0)">GADGETS</a>
-                                <div>
-                                    <a href="javascript:void(0)">GADGETS1</a>
-                                    <a href="javascript:void(0)">GADGETS2</a>
-                                    <a href="javascript:void(0)">GADGETS1</a>
-                                    <a href="javascript:void(0)">GADGETS2</a>
-                                </div>
-                            <a href="javascript:void(0)">CONTACT</a>
-                                <div>
-                                    <a href="javascript:void(0)">CONTACT1</a>
-                                    <a href="javascript:void(0)">CONTACT2</a>
-                                </div>
-                        </nav>
+                        <?php include 'helpers/menu.php'; ?>  
                     </div>
                     <div class="nowIsOpen">
-                        <img src="img/images6.png" alt="">
-                        <h2>NOW<br> IS<br> OPEN!</h2>
+                        <?php include 'helpers/nowIsOpen.php'; ?>
                     </div>
                     <div class="tagsWidget">
-                        <h3>Tags Widget</h3>
-                            <a class="chief" href="javascript:void(0)" >Kitesurf</a>
-                            <a href="javascript:void(0)">Super</a>
-                            <a href="javascript:void(0)">Duper</a>
-                            <a href="javascript:void(0)">Theme</a>
-                            <a href="javascript:void(0)">Man</a>
-                            <a href="javascript:void(0)">Woman</a>
-                            <a href="javascript:void(0)">Equipment</a>
-                            <a href="javascript:void(0)">Best</a>
-                            <a href="javascript:void(0)">Accessories</a>
-                            <a href="javascript:void(0)">Men</a>
-                            <a class="chief" href="javascript:void(0)">Apparel</a>
-                            <a href="javascript:void(0)">Super</a>
-                            <a href="javascript:void(0)">Duper</a>
-                            <a href="javascript:void(0)">Theme</a>
-                            <a href="javascript:void(0)">Responsiv</a>
-                            <a href="javascript:void(0)">Men</a>
-                            <a href="javascript:void(0)">Women</a>
-                            <a href="javascript:void(0)">Equipment</a>                            
-                        <div class="clear" id="tagsWidgetLast"></div>
-                        <div>
-                            <a href="javascript:void(0)">view all tags &#8594;</a>
-                        </div>
+                        <?php include 'helpers/tagsWidget.php'; ?>
                     </div>
                     <div class="articlesExperts">
                         <h3>Articles Experts</h3>
@@ -781,123 +625,13 @@
                         <div class="clear"></div>
                     </div>
                     <div class="instagramSeti">
-                        <a href="javascript:void(0)">
-                            <img src="img/fsPic.png" alt="">
-                        </a>
-                        <a href="javascript:void(0)">
-                            <img src="img/twPic.png" alt="">
-                        </a>
-                        <a href="javascript:void(0)">
-                            <img src="img/pPic.png" alt="">
-                        </a>
-                        <div class="clear"></div>
+                        <?php include 'helpers/instagramSeti.php'; ?>
                     </div>
                 </div>
             </div>
         </main>
         <footer>
-            <div class="footerTop">
-                <div class="footerTopWrapper">
-                    <div>
-                        <div class="footerTopContent1">
-                            <h3>Category</h3>
-                            <a href="javascript:void(0)">Home</a>
-                            <a href="javascript:void(0)">about us</a>
-                            <a href="javascript:void(0)">eshop</a>
-                            <a href="javascript:void(0)">Features</a>
-                            <a href="javascript:void(0)">new collections</a>
-                            <a href="javascript:void(0)">blog</a>
-                            <a href="javascript:void(0)">contact</a>
-                        </div>
-                        <div class="footerTopContent1">
-                            <h3>Our Account</h3>
-                            <a href="javascript:void(0)">Your Account</a>
-                            <a href="javascript:void(0)">Personal information</a>
-                            <a href="javascript:void(0)">Addresses</a>
-                            <a href="javascript:void(0)">Discount</a>
-                            <a href="javascript:void(0)">Orders history</a>
-                            <a href="javascript:void(0)">Addresses</a>
-                            <a href="javascript:void(0)">Search Terms</a>
-                        </div>
-                        <div class="footerTopContent1">
-                            <h3>Our Support</h3>
-                            <a href="javascript:void(0)">Site Map</a>
-                            <a href="javascript:void(0)">Search Terms</a>
-                            <a href="javascript:void(0)">Advanced Search</a>
-                            <a href="javascript:void(0)">Mobile</a>
-                            <a href="javascript:void(0)">Contact Us</a>
-                            <a href="javascript:void(0)">Mobile</a>
-                            <a href="javascript:void(0)">Addresses</a>
-                        </div>
-                        <div class="clear"></div>
-                    </div>
-                    <div>  
-                        <div class="footerTopContent2">
-                            <h3>About Us</h3>
-                            <p>Loren ipsum dolor sit amet, consectetues adipiscing elit.
-                            Aenean commodo liguta eget dolor. Aenean massa. Cum soclis natogue penatibus et magnis dis parturtient montes,
-                            nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</p>
-                            <p id="phone">Phone:&nbsp;&nbsp;&nbsp; 1-999-342-9876</p>
-                            <p id="e-mail">e-mail:
-                                <a href=" mailto:name@email.com">info@surfhouse.com</a>
-                            </p>
-                        </div>
-                        <div class="footerTopContent2">
-                            <div class="cardCenter">
-                                <h3>NewsLetter</h3>
-                                <p>Join throusands of other people sub-scribe to our news</p>
-                                <form class="email">
-                                    <input type="email" placeholder="INSERT EMAIL">
-                                    <button>SUBMIT</button>
-                                    <div class="clear"></div>
-                                </form>       
-                            </div>
-                            <div class="clear"></div>
-                            <div class="imgCard">
-                                <img src="img/card1.png" alt="">
-                                <img src="img/card2.png" alt="">
-                                <img src="img/card3.png" alt="">
-                                <img src="img/card4.png" alt="">
-                                <img src="img/card5.png" alt="">
-                                <img src="img/card6.png" alt="">
-                            </div>
-                        </div>
-                        <div class="clear"></div>
-                    </div>
-                    <div class="clear"></div>
-                </div>
-            </div>
-            <div class="footerBottom">
-                <div class="footerBottomIn">
-                    <div class="footerBottomLeft">
-                        <p>&#169; 2014 SURFHOUSE. All right reserved - Designed by theuncreativelab.com</p>
-                    </div>
-                    <div class="footerBottomRight">
-                        <a href="javascript:void(0)">
-                            <img src="img/fs.png" alt="">
-                        </a>
-                        <a href="javascript:void(0)">
-                            <img src="img/tw.png" alt="">
-                        </a>
-                        <a href="javascript:void(0)">
-                            <img src="img/p.png" alt="">
-                        </a>
-                        <a href="javascript:void(0)">
-                            <img src="img/google+.png" alt="">
-                        </a>
-                        <a href="javascript:void(0)">
-                            <img src="img/t.png" alt="">
-                        </a>
-                        <a href="javascript:void(0)">
-                            <img src="img/ins.png" alt="">
-                        </a>
-                        <a href="javascript:void(0)">
-                            <img src="img/wi-fi.png" alt="">
-                        </a>
-                    </div>
-                </div>
-                <div class="clear"></div>
-            </div>
+            <?php include 'helpers/footer.php'; ?>
         </footer>
         <script src="js/main.js"></script>
     </body>

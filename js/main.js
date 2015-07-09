@@ -1,3 +1,4 @@
+
 i=0;
 var a     = $('#nowLan');
     var en    = $('#en');
@@ -30,40 +31,33 @@ $(en).click(function(){
            $('#treugOff').css({display: 'block'});
            i=0;
        }
-    
 });
 
-
-
-
-
-
-$(function() {
-    $( "#speed" ).selectmenu();
- 
-
-  });
+//$(function() {
+//    $( "#speed" ).selectmenu();
+//  });
 $('#accordion').accordion({
         collapsible: true,
         active: false,
         heightStyle: 'content'
         });
-
-(function($) {
-    
-
+$('#accordion2').accordion({
+        collapsible: true,
+        active: false,
+        heightStyle: 'content'
+        });
+$('#accordion3').accordion({
+        collapsible: true,
+        active: false,
+        heightStyle: 'content'
+        });
+$(function() {
     $(function() {
-
         var carouselNavigation = $('.carousel-navigation').jcarousel();
-
-        
+    
         carouselNavigation.jcarousel('items').each(function() {
 
-
-
         });
-
-        // Setup controls for the stage carousel
         $('.prev-stage')
             .on('jcarouselcontrol:inactive', function() {
                 $(this).addClass('inactive');
@@ -75,8 +69,6 @@ $('#accordion').accordion({
                 target: '-=1'
             });
 
-
-        // Setup controls for the navigation carousel
         $('.prev-navigation')
             .on('jcarouselcontrol:inactive', function() {
                 $(this).addClass('inactive');
@@ -97,122 +89,34 @@ $('#accordion').accordion({
             })
             .jcarouselControl({
                 target: '+=1'
-            });
-            
+            }); 
     });
-})(jQuery);
+});
 
-
-
-
-
-
-
-
-
-
-
-
-
-        
-
-//(function($) {
-//    
-//
-//    $(function() {
-//        $('.slider .carousel-stage').jcarousel();
-//       
-//$(function() {
-//    $('.slider .carousel-stage')
-//        .jcarousel({
-//    interval: 10,
-//    wrap: 'both'
-//
-//        })
-//        .jcarouselAutoscroll({
-//            interval: 5000,
-//            target: '+=1',
-//            autostart: true
-//        });
-//});
-//        $('.buttonLeft')
-//            .on('jcarouselcontrol:inactive', function() {
-//                $(this).addClass('inactive');
-//            })
-//            .on('jcarouselcontrol:active', function() {
-//                $(this).removeClass('inactive');
-//            })
-//            .jcarouselControl({
-//                target: '-=1'
-//            });
-//
-//        $('.buttonRight')
-//            .on('jcarouselcontrol:inactive', function() {
-//                $(this).addClass('inactive');
-//            })
-//            .on('jcarouselcontrol:active', function() {
-//                $(this).removeClass('inactive');
-//            })
-//            
-//            .jcarouselControl({
-//                target: '+=1'
-//            });  
-//    });
-//})(jQuery);
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-(function($) {
-    
+$(function() {
     var connector = function(itemNavigation, carouselStage) {
         return carouselStage.jcarousel('items').eq(itemNavigation.index());
     };
-
     $(function() {
-        // Setup the carousels. Adjust the options for both carousels here.
         var carouselStage      = $('.carousel-stageSlider').jcarousel();
         var carouselNavigation = $('.carousel-navigationSlider').jcarousel();
 
-        // We loop through the items of the navigation carousel and set it up
-        // as a control for an item from the stage carousel.
         carouselNavigation.jcarousel('items').each(function() {
             var item = $(this);
-
-            // This is where we actually connect to items.
             var target = connector(item, carouselStage);
 
             $('.slider .carousel-stageSlider')
                 .jcarousel({
             interval: 10,
             wrap: 'both'
-
                 })
                 .jcarouselAutoscroll({
                     interval: 5000,
                     target: '+=1',
                     autostart: true
                 });
-
             item
                 .on('jcarouselcontrol:active', function() {
-//                    carouselNavigation.jcarousel('scrollIntoView', this);
                     item.addClass('active');
                 })
                 .on('jcarouselcontrol:inactive', function() {
@@ -224,29 +128,79 @@ $('#accordion').accordion({
                 });
         });
 
-        // Setup controls for the stage carousel
-        $('.prev-stageSlider')
-//            .on('jcarouselcontrol:inactive', function() {
-//                $(this).addClass('inactive');
-//            })
-//            .on('jcarouselcontrol:active', function() {
-//                $(this).removeClass('inactive');
-//            })
-            .jcarouselControl({
+        $('.prev-stageSlider').jcarouselControl({
                 target: '-=1'
             });
 
-        $('.next-stageSlider')
-//            .on('jcarouselcontrol:inactive', function() {
-//                $(this).addClass('inactive');
-//            })
-//            .on('jcarouselcontrol:active', function() {
-//                $(this).removeClass('inactive');
-//            })
+        $('.next-stageSlider').jcarouselControl({
+                target: '+=1'
+            });      
+    });
+});
+
+$(function() { 
+    var connector = function(itemNavigation, carouselStage) {
+        return carouselStage.jcarousel('items').eq(itemNavigation.index());
+    };
+    $(function() {
+        var carouselStage      = $('.containerProductContent').jcarousel();
+        var carouselNavigation = $('.carousel-navigationProduct').jcarousel();
+        carouselNavigation.jcarousel('items').each(function() {
+            var item = $(this);
+            var target = connector(item, carouselStage);
+            item
+                .on('jcarouselcontrol:active', function() {
+                    carouselNavigation.jcarousel('scrollIntoView', this);
+                    item.addClass('active');
+                })
+                .on('jcarouselcontrol:inactive', function() {
+                    item.removeClass('active');
+                })
+                .jcarouselControl({
+                    target: target,
+                    carousel: carouselStage
+                });
+        });
+        $('.prev-navigationProduct')
+            .on('jcarouselcontrol:inactive', function() {
+                $(this).addClass('inactive');
+            })
+            .on('jcarouselcontrol:active', function() {
+                $(this).removeClass('inactive');
+            })
+            .jcarouselControl({
+                target: '-=1'
+            });
+        $('.next-navigationProduct')
+            .on('jcarouselcontrol:inactive', function() {
+                $(this).addClass('inactive');
+            })
+            .on('jcarouselcontrol:active', function() {
+                $(this).removeClass('inactive');
+            })
             .jcarouselControl({
                 target: '+=1'
             });
-
-//       
     });
-})(jQuery);
+});
+
+
+var tab= $('.productTabs ul li');
+function active(){
+    
+    var b= $('.tabs div');
+    
+    for(i=0;i<tab.length;i++){
+        if(tab[i]===this){
+            tab[i].className='active';
+            b[i].style.display='block';
+        }
+        else{
+            tab[i].className=' ';
+            b[i].style.display='none';
+        }
+    }
+}
+for(i=0;i<tab.length;i++){
+    tab[i].addEventListener("click", active);
+    }
