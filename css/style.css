@@ -163,8 +163,8 @@ main {
     width: 100%;
     padding: 10px 40px 10px 10px;
     border: 0;
-    /*box-sizing: border-box;*/
-    box-sizing: content-box;
+    box-sizing: border-box;
+    /*box-sizing: content-box;*/
     font-size: 10px;
 }
 .formSearch > img {
