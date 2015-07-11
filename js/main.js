@@ -204,3 +204,64 @@ function active(){
 for(i=0;i<tab.length;i++){
     tab[i].addEventListener("click", active);
     }
+    
+        var cartA = 1;
+    $('.plus').click(function(){
+      cartA = cartA +1; 
+      $('.countIn').text(cartA);    
+    }) ;
+  $('.minus').click(function(){
+      if (cartA > 0){
+          cartA = cartA -1;
+       $('.countIn').text(cartA);
+      }
+    });
+    var cartB = 1;
+    $('.plus2').click(function(){
+      cartB = cartB +1; 
+      $('.countIn2').text(cartB);    
+    }) ;
+  $('.minus2').click(function(){
+      if (cartB > 0){
+          cartB = cartB -1;
+       $('.countIn2').text(cartB);
+      }
+    });
+    
+    
+//   function make(){
+//       var a = 0;
+//       if($(this).hasClass('plus')){
+//           a = a +1;
+//        
+//    console.log(a);
+//       }
+//       else if($(this).hasClass('minus')){
+//           a = a -1;
+//        
+//    console.log(a);
+//       }
+//   }
+    
+//var currentCount = 1;
+//function makeCounter() {
+////  var currentCount = 1;
+//
+//  return function() {
+//    return currentCount++;
+//    console.log(counter());
+//  };
+//  var counter = makeCounter();
+//}
+//function Counter() {
+//  
+//
+//  return function() {
+//    return currentCount--;
+//    console.log(counter());
+//  };
+//  var counter = Counter();
+//}
+
+
+ 

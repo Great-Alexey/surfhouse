@@ -33,6 +33,10 @@ body {
     width: 1500px;
     height: 344px;
 }
+.underHeader .cart {
+    width: 1500px;
+    height: 344px;
+}
 header {
     width: 1090px;
     margin: 0 auto;
@@ -317,7 +321,9 @@ main {
     left: 50%;
     margin: -8px 0 0 -6px;
 }
-
+.blockCenter {
+    margin-bottom: 60px;
+}
 .blockCenterRight {
     width: 270px;
     float: left;
@@ -490,6 +496,9 @@ nav div a {
 .blockCenterLeft {
     width: 870px;
     float: right;
+}
+.blockCenterLeftCart {
+    background: #f8f8f8;
 }
 .product {
     margin-bottom: 30px;
@@ -671,9 +680,6 @@ nav div a {
 .instagramFeed div p:nth-child(2) {
     margin-top: 4px;
     font-size: 18px;
-}
-.instagramImg {
-    margin-bottom: 60px;
 }
 .instagramImgIn {
     width: 172px;
@@ -1158,4 +1164,250 @@ nav div a {
 }
 img {
     border: none;
+}
+
+
+/*cart page*/
+.blockCenterLeftHeadTopic {
+    padding: 0 30px 30px 30px;
+}
+.blockCenterLeftHeadTopic .blockCenterLeftHeadTopicInActive,
+.blockCenterLeftHeadTopic .blockCenterLeftHeadTopicIn {
+    float: left;
+    margin-right: 30px;
+}
+.blockCenterLeftHeadTopic > div:last-child {
+    margin-right: 0;
+}
+.blockCenterLeftHeadTopic .blockCenterLeftHeadTopicInActive div,
+.blockCenterLeftHeadTopic .blockCenterLeftHeadTopicIn div,
+.blockCenterLeftHeadTopic .blockCenterLeftHeadTopicInActive h2,
+.blockCenterLeftHeadTopic .blockCenterLeftHeadTopicIn h2 {
+    float: left;
+    font-family: Roboto;
+    font-size: 24px;
+    color: #aaaaaa;
+    text-align: center;
+}
+.blockCenterLeftHeadTopic .blockCenterLeftHeadTopicInActive div,
+.blockCenterLeftHeadTopic .blockCenterLeftHeadTopicIn div {
+    margin-right: 6px;
+}
+.blockCenterLeftHeadTopic .blockCenterLeftHeadTopicInActive div,
+.blockCenterLeftHeadTopic .blockCenterLeftHeadTopicInActive h2 {
+    color: #ff0101;
+}
+.blockCenterLeftHeadTopic .blockCenterLeftHeadTopicInActive div,
+.blockCenterLeftHeadTopic .blockCenterLeftHeadTopicIn div {
+    width: 28px;
+    height: 28px;
+    border: 1px solid #aaaaaa;
+    border-radius: 100px;
+}
+.blockCenterLeftHeadTopic .blockCenterLeftHeadTopicInActive div {
+    border: 1px solid #ff0101;
+}
+.cartListLeft {
+    width: 600px;
+    float: left;
+}
+.cartListLeft .cartListHead p {
+    float: left;
+    font-family: Roboto;
+    font-size: 12px;
+    font-style: oblique;
+    color: #333333;
+    
+}
+.cartListLeft .cartListHead p:first-child {
+    width: 200px;
+    margin-left: 96px;
+}
+.cartListLeft .cartListHead p:nth-child(2) {
+    width: 100px;
+    text-align: center;
+}
+.cartListLeft .cartListHead p:nth-child(3) {
+    width: 100px;
+    text-align: center;
+}
+.cartListLeft .cartListHead p:last-child {
+    width: 80px;
+    text-align: center;
+}
+.cartListLeft .line,
+.cartList .lineLast {
+    width: 595px;
+    height: 1px;
+    background: #e8e8e8;
+    margin: 8px 0 15px 0;
+    float: left;
+}
+.cartList .lineLast {
+    width: 860px;
+    margin: 20px 0 0 0;
+}
+.cartListContent {
+    float: left;
+}
+.cartListContent .cartListContentImg {
+    width: 70px;
+    height: 110px;
+    margin: 0 12px 12px 12px;
+    float: left;
+    background: #dedede;
+}
+.cartListContent .cartListContentIn {
+    width: 200px;
+    float: left;
+}
+.cartListContent .cartListContentIn h5 {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: bold;
+    color: #353535;
+    margin-bottom: 4px;
+}
+.cartListContent .cartListContentIn p {
+    font-family: Roboto;
+    font-size: 12px;
+    color: #707070;
+    margin-bottom: 10px;
+}
+.cartListContent .cartListContentIn .cartListSeti a img {
+    display: block;
+    float: left;
+    margin-right: 15px;
+}
+.cartListContent .cartListContentIn .cartListSeti a:last-child img {
+    margin-right: 0;
+}
+.cartListContent .cartListContentIn .cartListSeti a img:hover {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+    transition: all 0.4s ease 0s;
+}
+.cartListContent .cartListPrice {
+    width: 100px;
+    float: left;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    color: #707070;
+}
+.cartListContent .count,
+.cartListContent .count2 {
+    width: 100px;
+    float: left;
+    position: relative;
+}
+.cartListContent .count button,
+.cartListContent .count2 button {
+    position: absolute;
+}
+.cartListContent .count .plus,
+.cartListContent .count2 .plus2 {
+    top: 2px;
+    right: 16px;
+}
+.cartListContent .count .minus,
+.cartListContent .count2 .minus2 {
+    top: 2px;
+    left: 16px;
+}
+.countIn,
+.countIn2 {
+    width: 28px;
+    margin: 0 auto;
+    padding: 6px 0;
+    background: #fff;
+    border: 1px solid #707070;
+    text-align: center;
+}
+.cartListContent .cartListSubtotal {
+    width: 90px;
+    float: left;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+    color: #707070;
+}
+.cartList .cartListRight {
+    width: 210px;
+    height: 310px;
+    padding: 30px 20px 50px 20px;
+    background: #fb4d01;
+    float: right;
+    margin-right: 10px;
+    color: #fff;
+    font-family: Roboto;
+}
+.cartList .cartListRight h3 {
+    font-size: 16px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.cartList .cartListRight div {
+    margin-bottom: 30px;
+}
+.cartList .cartListRight .cartListRightClear {
+    margin-bottom: 56px;
+}
+.cartList .cartListRight p:first-child {
+    float: left;
+}
+.cartList .cartListRight p:last-child {
+    float: right;
+}
+.cartList .cartListRight button {
+    width: 210px;
+    height: 40px;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 28px;
+    color: #fff;
+    background: #333333;
+    border: 0;
+}
+.cartList .enterCode {
+    width: 576px;
+    float: left;
+    padding: 0 12px;
+}
+.cartList .enterCode h2 {
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: oblique;
+    color: #333333; 
+    margin-bottom: 10px;
+}
+.cartList .enterCodeForm input {
+    width: 220px;
+    height: 30px;
+    float: left;
+    font-family: Roboto;
+    font-size: 11px;
+    color: #a8a8a8;
+    padding: 0 10px;
+}
+.cartList .enterCodeForm button {
+    width: 200px;
+    height: 32px;
+    float: right;
+    font-family: Roboto;
+    font-size: 14px;
+    color: #fff;
+    background: #333333;
+    border: 0;
+}
+.cartList .enterCode > a {
+    float: right;
+    text-decoration: underline;
+    font-family: Roboto;
+    font-size: 14px;
+    font-style: oblique;
+    color: #333333; 
 }

@@ -5,7 +5,7 @@
     </head>
     <body>
         <div class="underHeader">
-            <img src="img/headFon2.png" alt="">
+            <img src="img/headFon2.png" class="home" alt="">
         </div>
         <header>
             <?php include 'helpers/header.php'; ?>
@@ -624,10 +624,10 @@
                         </div>
                         <div class="clear"></div>
                     </div>
-                    <div class="instagramSeti">
-                        <?php include 'helpers/instagramSeti.php'; ?>
-                    </div>
                 </div>
+            </div>
+            <div class="instagramSeti">
+                <?php include 'helpers/instagramSeti.php'; ?>
             </div>
         </main>
         <footer>
