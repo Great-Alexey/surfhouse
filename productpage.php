@@ -36,7 +36,7 @@
                 </div>
                 <div class="blockCenterLeft">
                     <div class="blockCenterLeftHead">
-                        <div class="blockCenterLeftHeadLeft">
+                        <div class="blockCenterLeftHeadLeft blockCenterLeftHeadLeftProduct">
                             <a href="javascript:void(0)">Home</a>
                             <a href="javascript:void(0)">&#187;</a>
                             <a href="javascript:void(0)"> Apparel</a>
@@ -179,9 +179,9 @@
                                 </p>
                             </div>
                             <div class="polosa"></div>
-                            <div class="productSize">
+                            <div class="productSize productSizeP">
                                 <h5 class="ProductBanner">SIZE</h5>
-                                <p>25</p>
+                                <p class="productSizeActive">25</p>
                                 <p>26</p>
                                 <p>27</p>
                                 <p>28</p>
@@ -189,14 +189,14 @@
                                 <p>30</p>
                                 <p>31</p>
                                 <p>32</p>
-                                <p class="productSizeLast">33</p>
+                                <p id="productSizeLast">33</p>
                                 <div class="clear"></div>
                             </div>
                             <div class="polosa"></div>
-                            <div class="productSize">
+                            <div class="productSize productSizeBanner">
                                 <h5 class="ProductBanner">LENGTH</h5>
-                                <p>32</p>
-                                <p class="productSizeLast">34</p>
+                                <p class="productSizeActive">32</p>
+                                <p id="productSizeLast2">34</p>
                                 <div class="clear"></div>
                             </div>
                             <div class="polosa"></div>

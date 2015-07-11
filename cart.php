@@ -48,24 +48,25 @@
                                 <p>UNIT PRICE</p>
                                 <p>QTY</p>
                                 <p>SUBTOTAL</p>
+                                <div class="clear"></div>
                             </div>
-                            <div class="clear"></div>
-                            <div class="line"></div>
                             <div class="cartListContent">
-                                <div class="cartListContentImg">
-                                    <img src="" alt="">
-                                </div>
-                                <div class="cartListContentIn">
-                                    <h5>PEEKY CROPPED</h5>
-                                    <p>
-                                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                        sed do eiusmod tempor incididunt ut labore et dolore
-                                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    </p>
-                                    <div class="cartListSeti">
-                                        <a href="javascript:void(0)"><img src="img/cartFb.png" alt=""></a>
-                                        <a href="javascript:void(0)"><img src="img/cartTw.png" alt=""></a>
-                                        <a href="javascript:void(0)" class="productSizeLast"><img src="img/cartP.png" alt=""></a>
+                                <div class="cartListContentUnited">
+                                    <div class="cartListContentImg">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="cartListContentIn">
+                                        <h5>PEEKY CROPPED</h5>
+                                        <p>
+                                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                            sed do eiusmod tempor incididunt ut labore et dolore
+                                            magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                        </p>
+                                        <div class="cartListSeti">
+                                            <a href="javascript:void(0)"><img src="img/cartFb.png" alt=""></a>
+                                            <a href="javascript:void(0)"><img src="img/cartTw.png" alt=""></a>
+                                            <a href="javascript:void(0)" class="productSizeLast"><img src="img/cartP.png" alt=""></a>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="cartListPrice">
@@ -79,25 +80,26 @@
                                 <div class="cartListSubtotal">
                                     <p>&#8364; 749.50</p>
                                 </div>
-                                <img src="img/cart.+.png" alt="">
+                                <img src="img/cart.+.png" class="cartRemove" alt="">
                             </div>
                             <div class="clear"></div>
-                            <div class="line"></div>
                             <div class="cartListContent">
-                                <div class="cartListContentImg">
-                                    <img src="" alt="">
-                                </div>
-                                <div class="cartListContentIn">
-                                    <h5>PEEKY CROPPED</h5>
-                                    <p>
-                                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                        sed do eiusmod tempor incididunt ut labore et dolore
-                                        magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    </p>
-                                    <div class="cartListSeti">
-                                        <a href="javascript:void(0)"><img src="img/cartFb.png" alt=""></a>
-                                        <a href="javascript:void(0)"><img src="img/cartTw.png" alt=""></a>
-                                        <a href="javascript:void(0)" class="productSizeLast"><img src="img/cartP.png" alt=""></a>
+                                <div class="cartListContentUnited">
+                                    <div class="cartListContentImg">
+                                        <img src="" alt="">
+                                    </div>
+                                    <div class="cartListContentIn">
+                                        <h5>PEEKY CROPPED</h5>
+                                        <p>
+                                            "Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                            sed do eiusmod tempor incididunt ut labore et dolore
+                                            magna aliqua. Ut enim ad minim veniam, quis nostrud
+                                        </p>
+                                        <div class="cartListSeti">
+                                            <a href="javascript:void(0)"><img src="img/cartFb.png" alt=""></a>
+                                            <a href="javascript:void(0)"><img src="img/cartTw.png" alt=""></a>
+                                            <a href="javascript:void(0)" class="productSizeLast"><img src="img/cartP.png" alt=""></a>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="cartListPrice">
@@ -111,10 +113,9 @@
                                 <div class="cartListSubtotal">
                                     <p>&#8364; 749.50</p>
                                 </div>
-                                <img src="img/cart.+.png" alt="">
+                                <img src="img/cart.+.png" class="cartRemove" alt="">
                             </div>
                             <div class="clear"></div>
-                            <div class="line"></div>
                         </div>
                         <div class="cartListRight">
                             <h3>REVIEW YOUR CART</h3>

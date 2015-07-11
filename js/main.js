@@ -211,7 +211,7 @@ for(i=0;i<tab.length;i++){
       $('.countIn').text(cartA);    
     }) ;
   $('.minus').click(function(){
-      if (cartA > 0){
+      if (cartA > 1){
           cartA = cartA -1;
        $('.countIn').text(cartA);
       }
@@ -222,46 +222,43 @@ for(i=0;i<tab.length;i++){
       $('.countIn2').text(cartB);    
     }) ;
   $('.minus2').click(function(){
-      if (cartB > 0){
+      if (cartB > 1){
           cartB = cartB -1;
        $('.countIn2').text(cartB);
       }
     });
+    var size = $('.productSizeP p');
+function activeSize(){
+    for(i=0;i<size.length;i++){
+        if(size[i]===this){
+            size[i].className='productSizeActive';
+        }
+        else{
+            size[i].className=' ';  
+        }
+    }
+} 
+for(i=0;i<size.length;i++){
+    size[i].addEventListener("click", activeSize);
+    }
     
     
-//   function make(){
-//       var a = 0;
-//       if($(this).hasClass('plus')){
-//           a = a +1;
-//        
-//    console.log(a);
-//       }
-//       else if($(this).hasClass('minus')){
-//           a = a -1;
-//        
-//    console.log(a);
-//       }
-//   }
-    
-//var currentCount = 1;
-//function makeCounter() {
-////  var currentCount = 1;
-//
-//  return function() {
-//    return currentCount++;
-//    console.log(counter());
-//  };
-//  var counter = makeCounter();
-//}
-//function Counter() {
-//  
-//
-//  return function() {
-//    return currentCount--;
-//    console.log(counter());
-//  };
-//  var counter = Counter();
-//}
-
-
- 
+     var sizeB = $('.productSizeBanner p');
+function activeSizeB(){
+    for(i=0;i<sizeB.length;i++){
+        if(sizeB[i]===this){
+            sizeB[i].className='productSizeActive';
+        }
+        else{
+            sizeB[i].className=' ';  
+        }
+    }
+} 
+for(i=0;i<sizeB.length;i++){
+    sizeB[i].addEventListener("click", activeSizeB);
+    }
+$(document).ready(function(){
+$('.cartRemove').click(function(){
+    $(this).parent().remove();
+});
+});

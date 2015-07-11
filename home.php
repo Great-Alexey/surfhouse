@@ -5,7 +5,7 @@
     </head>
     <body>
         <div class="underHeader">
-            <img src="img/headFon2.png" class="home" alt="">
+            <img src="img/headFon4.png" class="home" alt="">
         </div>
         <header>
             <?php include 'helpers/header.php'; ?>
