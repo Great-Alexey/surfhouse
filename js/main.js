@@ -257,8 +257,21 @@ function activeSizeB(){
 for(i=0;i<sizeB.length;i++){
     sizeB[i].addEventListener("click", activeSizeB);
     }
+
 $(document).ready(function(){
-$('.cartRemove').click(function(){
-    $(this).parent().remove();
+    $('.address1 a').click(function(){
+        $(this).children().toggleClass('active');
+});
+});
+
+$(document).ready(function(){
+    $('.checkoutButton').click(function(){
+        $(this).parent().next('').toggleClass('formCountryList');
+});
+});
+
+$(document).ready(function(){
+    $('.experetion').click(function(){
+        $(this).next('').toggleClass('formCountryList');
 });
 });

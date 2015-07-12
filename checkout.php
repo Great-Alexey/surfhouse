@@ -13,7 +13,7 @@
         <main>
             <div class="topSlider"></div>
             <div class="clear"></div>
-            <div class="blockCenter">
+            <div class="blockCenter blockCenterCheckout">
                 <div class="blockCenterLeft blockCenterLeftCart">
                     <div class="blockCenterLeftHead">
                         <div class="blockCenterLeftHeadLeft">
@@ -55,8 +55,13 @@
                                 </div>
                                 <div class="cartListLeftLeftCenter">
                                     <div class="cartListLeftLeftCenterRadio">
-                                        <p><input name="choice" type="radio" checked="">CHECKOUT AS GUEST</p>
-                                        <p><input name="choice" type="radio">REGISTER</p>
+                                        <form>
+                                            <input name="choice" type="radio" checked="">
+                                            <p>CHECKOUT AS GUEST</p>
+                                            <div class="clear"></div>
+                                            <input name="choice" type="radio">
+                                            <p>REGISTER</p>
+                                        </form>
                                     </div>
                                     <div class="cartListLeftLeftList">
                                         <p>Register and save time!</p>
@@ -70,7 +75,30 @@
                                     <button>FILL THE SING FORM</button>
                                 </div>
                             </div>
-                            <div class="cartListLeftRight"></div>
+                            <div class="cartListLeftRight">
+                                <div class="cartListLeftLeftTop cartListLeftRightTop">
+                                    <h3>ARE YOU A</h3>
+                                    <h2>MEMBER</h2>
+                                    <p>Already Registered?</p>
+                                    <P class="plast">Please og in below:</P>
+                                </div>
+                                <div class="cartListLeftrightCenter">
+                                    <form>
+                                        <p>Email Address*</p>
+                                        <input type="text">
+                                        <p>Password*</p>
+                                        <input type="text">
+                                    </form>
+                                    <div class="cartListLeftrightList">
+                                        <p>*Required Fields</p>
+                                        <a href="lavascript:void(0)">Forgot your password?</a>
+                                        <div class="clear"></div>
+                                    </div>
+                                </div>
+                                <div class="cartListLeftLeftBottom">
+                                    <button>LOGIN</button>
+                                </div>
+                            </div>
                         </div>
                         <div class="cartListRight">
                             <h3>REVIEW YOUR CART</h3>
@@ -108,11 +136,199 @@
                     <div class="nowIsOpen">
                         <?php include 'helpers/nowIsOpen.php'; ?>
                     </div>
+                    <div class="articlesExperts">
+                        <?php include 'helpers/articlesExperts.php'; ?>
+                    </div>
                 </div>
-                <div class="blockCenterLeft">
-                    
+                <div class="blockCenterLeft"> 
                     <div class="blockCenterLeftContent">
+                        <div class="blockCenterLeftContentHead">
+                            <h3>YOUR SHIPPING INFORMATION</h3>
+                            <h3>YOUR PAYMENT DETAILS</h3>
+                            <div class="clear"></div>
+                        </div>
                         
+                        <div class="blockCenterLeftContentCenter">
+                            <div class="blockCenterLeftContentCenterLeft">
+                                <form>
+                                    <p>EMAIL*</p>
+                                    <input type="email" placeholder="e.g. name@email.com">
+                                </form>
+                                <form>
+                                    <p>FULL NAME*</p>
+                                    <input type="text" placeholder="first name" class="secondInput">
+                                    <input type="text" placeholder="surname">
+                                </form>
+                                <form>
+                                    <p>COMPANY</p>
+                                    <input type="text" placeholder="e.g. your company(optional)">
+                                </form>
+                                <form>
+                                    <p>ADDRESS*</p>
+                                    <input type="text" placeholder="address line 1" class="secondInput">
+                                    <input type="text" placeholder="address line 2">
+                                </form>
+                                <div class="address1">
+                                    <a href="javascript:void(0)">
+                                        <img src="img/galka.png" alt="" class="active inactive">
+                                    </a>
+                                    <h4>BILLING ADDRESS SAME AS SHIPPING.</h4>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="blockCenterLeftContentCenterCenter">
+                                <form>
+                                    <p>POSTAL CODE*</p>
+                                    <input type="text" placeholder="e.g. 201000">
+                                </form>
+                                <form>
+                                    <p>TOWN / SITY*</p>
+                                    <input type="text" placeholder="e.g. Los Angeles">
+                                </form>
+                                <form class="formCountry">
+                                    <p>STATE / COUNTRY*</p>
+                                    <select>
+                                        <option>select</option>
+                                        <option>USA</option>
+                                        <option>RUSSIA</option>
+                                        <option>UKRAINE</option>
+                                    </select>
+<!--                                    <div>
+                                        <input id="country" type="text" placeholder="select">
+                                        <button class="checkoutButton"></button>
+                                    </div>
+                                    <div class="formCountryList ololo">
+                                        <a href="javascript:void(0)">USA</a>
+                                        <a href="javascript:void(0)">RUSSIA</a>
+                                        <a href="javascript:void(0)">UKRAINE</a>
+                                    </div>-->
+                                </form>
+                                <form class="formProvince">
+                                    <p>PROVINCE*</p>
+                                    <select>
+                                        <option>select</option>
+                                        <option>Alayska</option>
+                                        <option>Siberia</option>
+                                        <option>Cuba</option>
+                                    </select>
+<!--                                    <div>
+                                        <input id="province" type="text" placeholder="select">
+                                        <button class="checkoutButton"></button>
+                                    </div>
+                                    <div class="formCountryList ololo">
+                                        <a href="javascript:void(0)">Alayska</a>
+                                        <a href="javascript:void(0)">Siberia</a>
+                                        <a href="javascript:void(0)">Cuba</a>
+                                    </div>-->
+                                </form>
+                                <form class="formMobile">
+                                    <p>MOBILE*</p>
+                                    <select>
+                                        <option>+39</option>
+                                        <option>+1</option>
+                                        <option>+7</option>
+                                        <option>+34</option>
+                                    </select>
+                                    <input id="mobile2" type="text" placeholder="phone">
+<!--                                    <div>
+                                        <input id="mobile" type="text" placeholder="+39">
+                                        <input id="mobile2" type="text" placeholder="phone">
+                                        <button class="checkoutButton"></button>
+                                    </div>
+                                    <div class="formCountryList ololo">
+                                        <a href="javascript:void(0)">+1</a>
+                                        <a href="javascript:void(0)">+7</a>
+                                        <a href="javascript:void(0)">+34</a>
+                                    </div>-->
+                                </form>
+                                <div class="address1">
+                                    <a href="javascript:void(0)">
+                                        <img src="img/galka.png" alt="" class="active inactive">
+                                    </a>
+                                    <h4>REMEMBER THIS ADDRESS NEXT TIME</h4>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="blockCenterLeftContentCenterRight">
+                                <form>
+                                    <p>CREDIT CARD NUMBER*</p>
+                                    <input type="text" placeholder="type your credit card number">
+                                </form>
+                                <div class="checkoutImg">
+                                    <img src="img/checkout1.png" alt="">
+                                    <img src="img/checkout2.png" alt="">
+                                    <img src="img/checkout3.png" alt="">
+                                    <img src="img/checkout4.png" alt="">
+                                </div>
+                                <form class="experetionDate">
+                                    <p>EXPIRATION DATE*</p>
+                                    <select class="date">
+                                        <option>+39</option>
+                                        <option>+1</option>
+                                        <option>+7</option>
+                                        <option>+34</option>
+                                    </select>
+                                    <select class="year">
+                                        <option>+39</option>
+                                        <option>+1</option>
+                                        <option>+7</option>
+                                        <option>+34</option>
+                                    </select>
+<!--                                    <input type="text" placeholder="date" id="date">
+                                    <button id="experetionDate" class="experetion"></button>
+                                    <div class="formCountryList ololo">
+                                        <a href="javascript:void(0)">+1</a>
+                                        <a href="javascript:void(0)">+7</a>
+                                        <a href="javascript:void(0)">+34</a>
+                                        <a href="javascript:void(0)">+1</a>
+                                        <a href="javascript:void(0)">+7</a>
+                                        <a href="javascript:void(0)">+34</a>
+                                    </div>-->
+<!--                                    <input type="text" placeholder="year" id="year">
+                                    <button id="experetionYear" class="experetion"></button>
+                                    
+                                        <select>alala
+                                            <option>ololo</option>
+                                            <option>ololo</option>
+                                        </select>-->
+                                        <!--<select>alala</select>-->
+                                    
+<!--                                    <div class="formCountryList ololo">
+                                        <a href="javascript:void(0)">+1</a>
+                                        <a href="javascript:void(0)">+7</a>
+                                        <a href="javascript:void(0)">+34</a>
+                                        <a href="javascript:void(0)">+1</a>
+                                        <a href="javascript:void(0)">+7</a>
+                                        <a href="javascript:void(0)">+34</a>
+                                    </div>-->
+                                </form>
+                                <form class="secureCode">
+                                    <p>SECURE CODE(CCV)*</p>
+                                    <input type="text" placeholder="000">
+                                    <a href="javascript:void(0)">What is this?</a>
+                                </form>
+                                <form>
+                                    <p>NAME ON CARD*</p>
+                                    <input type="text" placeholder="name on card">
+                                </form>
+                                <p>We value your privacy</p>
+                                <div class="address1">
+                                    <a href="javascript:void(0)">
+                                        <img src="img/galka.png" alt="" class="active inactive">
+                                    </a>
+                                    <h4>REMEMBER THIS CARD INFO NEXT TIME.</h4>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="blockCenterLeftContentCenterFoot">
+                                <p>
+                                    Easy access to your order history and statusEasy access to your order history and status
+                                    Easy access to your order history and statusEasy access to your order history and status
+                                    Easy access to your order history and statusEasy access to your order history and status
+                                </p>
+                                <button>PLACE ORDER</button>
+                            </div>
+                        </div>
                     </div>
                      
                 </div>

@@ -1,7 +1,8 @@
 
-<a href="javascript:void(0)">
+            <a href="javascript:void(0)">
                 <img src="img/logo.png" alt="">
             </a>
+<div class="headerContact">
             <div class="changeLang">
                 <div class="changeLangIn">
                     <a id="nowLan">EN</a>
@@ -29,5 +30,5 @@
                     <img src="img/ins.png" alt="">
                 </a>
             </div>
-
+</div>
 
