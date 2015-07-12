@@ -7,7 +7,7 @@
         <div class="underHeader">
             <img src="img/contactMap.png" class="cart" alt="">
         </div>
-        <header>
+        <header class="headerContactBg">
             <?php include 'helpers/header.php'; ?>
         </header>
         <main class="contactPage">

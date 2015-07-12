@@ -44,9 +44,11 @@ header {
 }
 .headerContact {
     padding: 10px 2px 4px 12px;
-    background: url('../img/bg.png')repeat;
     float: right;
     margin-top: 40px;
+}
+.headerContactBg .headerContact {
+    background: url('../img/bg.png')repeat;
 }
 .changeLang {
     float: right;
